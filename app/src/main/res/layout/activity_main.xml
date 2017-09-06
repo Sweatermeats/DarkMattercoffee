@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A1887F"
+    >
+
+    <ImageView
+       android:src="@drawable/darkmattercoffeelogo"
+        android:id="@+id/darkmattercoffeelogo"
+        android:contentDescription="@string/dark_matter_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#F9FBE7"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/darkmattercoffeelogo"
+        android:layout_toLeftOf="@id/darkmattercoffeelogo"
+        android:layout_toRightOf="@id/darkmattercoffeelogo"
+        android:layout_above="@id/mothership"
+        android:background="#F9FBE7"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/darkmattercoffeelogo"
+        android:layout_above="@id/mothership"
+        android:background="#F9FBE7"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@strings/The Mothership"
+        android:id="@+id/mothership"
+        android:layout_below="@+id/darkmattercoffeelogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="34sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFAB00"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@strings/roastery and espresso bar"
+        android:id="@+id/roastery"
+        android:layout_below="@+id/mothership"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:src="@drawable/mothershipfront"
+        android:id="@+id/imageView"
+        android:contentDescription="@string/mothership_store_front"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/roastery"
+        android:scaleType="centerCrop"
+         />
+
+    <ImageView
+        android:src="@drawable/mothershippic"
+        android:id="@+id/interior"
+        android:contentDescription="@string/mothership_interior"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/imageView"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:text="@string/open_6am_6pm_daily"
+        android:id="@+id/storehours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView"
+        android:layout_margin="20sp"
+        android:textColor="#FFAB00"/>
+
+    <TextView
+        android:text="@string/_738_n_western_ave"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storehours"
+        android:textSize="16sp"
+        android:layout_marginLeft="60dp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:text="@string/chicago_il_60612"
+        android:id="@+id/cityaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:textSize="16sp"
+        android:layout_marginLeft="70dp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:text="@string/_773_697_8472"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/cityaddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="70dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
